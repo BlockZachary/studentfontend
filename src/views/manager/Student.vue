@@ -23,7 +23,7 @@
 
         <el-table-column prop="avatar" label="头像">
           <template #default="scope">
-            <el-image v-if="scope.row.avatar" :src="scope.row.avatar" :preview-src-list="[scope.row.avatar]"
+            <el-image v-if="scope.row.avatar" :src="scope.row.avatar" :preview-src-list="[scope.row.avatar]" :preview-teleported="true"
                       style="width: 40px;height: 40px"></el-image>
           </template>
         </el-table-column>
